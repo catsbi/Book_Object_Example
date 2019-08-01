@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="225.37500000000003" y="0.0">com.catsbi.example.Ticket</node>
+    <node x="46.39583333333334" y="125.0">com.catsbi.example.Bag</node>
+    <node x="251.39583333333334" y="159.5">com.catsbi.example.TicketOffice</node>
+    <node x="78.91666666666669" y="388.0">com.catsbi.example.Audience</node>
+    <node x="243.39583333333334" y="388.0">com.catsbi.example.TicketSeller</node>
+    <node x="1008.0" y="128.0">com.catsbi.example.Main</node>
+    <node x="0.0" y="12.0">com.catsbi.example.Invitation</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.catsbi.example.TicketSeller" target="com.catsbi.example.TicketOffice">
+      <point x="50.25" y="-37.5" />
+      <point x="394.14583333333337" y="363.0" />
+      <point x="390.14583333333337" y="363.0" />
+      <point x="46.25" y="72.0" />
+    </edge>
+    <edge source="com.catsbi.example.Bag" target="com.catsbi.example.Invitation">
+      <point x="-23.125" y="-106.5" />
+      <point x="115.77083333333334" y="105.0" />
+      <point x="118.5" y="105.0" />
+      <point x="39.5" y="25.5" />
+    </edge>
+    <edge source="com.catsbi.example.Audience" target="com.catsbi.example.Bag">
+      <point x="28.75" y="-37.5" />
+      <point x="165.16666666666669" y="363.0" />
+      <point x="185.14583333333334" y="363.0" />
+      <point x="46.25" y="106.5" />
+    </edge>
+    <edge source="com.catsbi.example.Bag" target="com.catsbi.example.Ticket">
+      <point x="23.125" y="-106.5" />
+      <point x="162.02083333333334" y="95.0" />
+      <point x="240.37500000000003" y="95.0" />
+      <point x="-45.0" y="37.5" />
+    </edge>
+    <edge source="com.catsbi.example.TicketOffice" target="com.catsbi.example.Ticket">
+      <point x="-46.25" y="-72.0" />
+      <point x="297.64583333333337" y="105.0" />
+      <point x="300.375" y="105.0" />
+      <point x="15.0" y="37.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="805.5" y="168.5" />
+  <SelectedNodes>
+    <node>com.catsbi.example.Main</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
