@@ -1,14 +1,14 @@
-package com.catsbi.example;
+package com.catsbi.example.chapter01;
 
-public class Theater_Fixed {
-    private TicketSeller_Fixed ticketSeller_fixed;
+public class Theater {
+    private TicketSeller ticketSeller;
 
-    public Theater_Fixed(TicketSeller_Fixed ticketSeller_fixed) {
-        this.ticketSeller_fixed = ticketSeller_fixed;
+    public Theater(TicketSeller ticketSeller) {
+        this.ticketSeller = ticketSeller;
     }
-    //fixed_example
+    //basic_example
     public void enter(Audience audience){
-        /*if(audience.getBag().hasInvitation()){
+        if(audience.getBag().hasInvitation()){
             Ticket ticket = ticketSeller.getTicketOffice().getTicket();
             audience.getBag().setTicket(ticket);
         }else{
@@ -16,9 +16,7 @@ public class Theater_Fixed {
             audience.getBag().minusAmount(ticket.getFee());
             ticketSeller.getTicketOffice().plusAmount(ticket.getFee());
             audience.getBag().setTicket(ticket);
-        }*/
-        ticketSeller_fixed.sellTo(audience);
-
+        }
     }
 
 }

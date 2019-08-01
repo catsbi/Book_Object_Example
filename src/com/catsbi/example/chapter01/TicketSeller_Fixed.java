@@ -1,4 +1,4 @@
-package com.catsbi.example;
+package com.catsbi.example.chapter01;
 
 public class TicketSeller_Fixed {
     private TicketOffice ticketOffice;

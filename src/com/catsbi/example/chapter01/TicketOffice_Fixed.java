@@ -1,4 +1,4 @@
-package com.catsbi.example;
+package com.catsbi.example.chapter01;
 
 import java.util.ArrayList;
 import java.util.Arrays;
