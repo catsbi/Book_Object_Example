@@ -1,8 +1,21 @@
 package com.catsbi.example.chapter01;
 
-public class Main {
+import java.util.ArrayList;
+import java.util.List;
 
-    public static void main(String[] args) {
-	// write your code here
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Long longData = 5000L;
+        Bag bag = new Bag(longData);
+        Audience audience = new Audience(bag);
+        List<Ticket> tickets = new ArrayList<>();
+        Ticket ticket = new Ticket();
+        ticket.setFee(longData);
+        TicketOffice ticketOffice = new TicketOffice(longData,ticket);
+        TicketSeller ticketSeller = new TicketSeller(ticketOffice);
+        Theater theater = new Theater(ticketSeller);
+        theater.enter(audience);
     }
 }
